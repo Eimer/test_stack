@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about__body {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "blck nav article ads bok"
+    "footer footer footer footer footer";
+  grid-template-rows: 6% 1fr 25%;
+  grid-template-columns: 17% 9% 1fr 15% 19%;
+  height: 100vh;
+  margin: 0;
+}
+
+#pageHeader {
+  border-top: 3px solid #df8510;
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 2px 2px #a8a7a7;
+  background: rgb(250, 249, 249);
+}
+
+#btn_log_in {
+  position: absolute;
+  top: 10px;
+  outline: none;
+  border-radius: 5px;
+  background: #7cdef7;
+  color: #143b8d;
+  right: 650px;
+  padding: 7px;
+}
+
+#logo {
+  z-index: 1;
+  width: 8%;
+  margin-left: 330px;
+}
+
+.about__hedear input {
+  padding-left: 15px;
+}
+
+#searchBar {
+  line-height: 30px;
+  width: 600px;
+  position: absolute;
+  top: 10px;
+  left: 580px;
+}
+
+#pageFooter {
+  grid-area: footer;
+  background: rgb(37, 39, 38);
+}
+
+#mainArticle {
+  grid-area: article;
+}
+
+.filterQuestions {
+  border-bottom: 1px solid #aaa8a8;
+  line-height: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+#title {
+  margin: 30px 0px 0px 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.allShowQuestions {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0px 0px 31px;
+}
+
+#btnAskQues {
+  line-height: 40px;
+  outline: none;
+  width: 110px;
+  background: rgb(51, 140, 223);
+  border-radius: 5px;
+  color: #ffffff;
+  top: 90px;
+  right: 700px;
+  position: absolute;
+}
+
+.btn-tags {
+  position: absolute;
+  right: 700px;
+  top: 160px;
+}
+/* 
+.btn-tags button {
+  line-height: 40px;
+  padding: 0px 15px 0px 15px;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #a8a7a7;
+} */
+
+.btn-tags button:hover {
+  background: rgb(51, 140, 223);
+  color: #ffffff;
+}
+
+#mainNav {
+  height: 1000px;
+  grid-area: nav;
+  border-right: 1px solid #aaa8a8;
+  color: #726f6f;
+  font-size: 15px;
+}
+
+#mainNav a {
+  padding: 10px 0px 10px 10px;
+  color: #726f6f;
+  width: 90%;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.active {
+  background-color: #f0f0f0;
+  border-right: 3px solid #df8510;
+  width: 95%;
+  color: #000000;
+}
+
+#siteAds {
+  grid-area: ads;
+}
+
+#siteBlock {
+  grid-area: blck;
+}
+
+#siteBlo {
+  grid-area: bok;
+}
+
+.item  {
+  padding: 6px;
+  line-height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #9e9c9c;
+  display: flex;
+}
+
+.contFeedback {
+  color: #918f8f;
+  text-align: center;
+  padding: 6px;
+}
+
+.linkQuestions {
+  color: #365caf;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.descriptionsTags {
+  font-size: 15px;
+  padding: 15px 300px 10px 25px;
+}
+
+#searchTags {
+  line-height: 30px;
+  margin: 10px 0px 0px 20px;
+}
