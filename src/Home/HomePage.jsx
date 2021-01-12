@@ -11,7 +11,7 @@ class Home extends React.Component {
     }
     componentDidMount() {
         fetch(
-            `https://api.stackexchange.com/2.2/questions?order=asc&sort=activity&site=stackoverflow`
+            `data.json`
         )
             .then((resp) => resp.json())
             .then((result) => {
